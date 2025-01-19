@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- Swiper JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Aside -->
+      <aside class="container__aside">
+        <section id="image">
+          <div class="items">
+            <div class="image__item">
+              <img src="img/Group.jpg" alt />
+            </div>
+            <div class="image__search">
+              <img src="img/search.png" alt />
+            </div>
+          </div>
+        </section>
+        <section id="menu">
+          <div class="menu_title">
+            <div class="navibar">
+              <div class="navibar__head">
+                <div class="navibar__head--line"></div>
+                <h3 class="navibar__head--txt">Equipment
+                  Repair</h3>
+              </div>
+              <ul class="navibar__menu">
+                <li>Services</li>
+                <li>For Corperate Clients</li>
+                <li>For Equipment Sellers</li>
+                <li>For Partners</li>
+                <li>For Menufacturers</li>
+                <li>Our Service Centers</li>
+                <li>Contacts</li>
+              </ul>
+            </div>
+            <div class="infor">
+              <div class="infor__image">
+                <img src="img/call.png" alt="call" />
+                <img src="img/chat.png" alt />
+                <img src="img/profile.png" alt />
+              </div>
+              <p>dul.ros07@gmail.com</p>
+              <h1>010 7312 1770</h1>
+
+              <!-- Language -->
+              <div class="infor__lang">
+                <button>KH</button>
+                <button>ENG</button>
+                <button>CH</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Article -->
+      <section class="container__main">
+        <nav class="navBar">
+          <!-- Mobile -->
+          <div class="navBar--mobile">
+            <ul class="mobile--items">
+              <li><img src="img/burger.jpg" class="burger__btn" alt /></li>
+              <li><img src="img/Group.jpg" alt /></li>
+              <!-- seperate  bar-->
+              <li class="navBar--mobile__line"></li>
+              <li><img src="img/repair.jpg" class="repair__btn--m"
+                  alt /></li>
+              <li><img src="img/checkstatus.png" alt
+                  class="order__btn--m" /></li>
+            </ul>
+            <!-- tablet -->
+            <div class="tablet">
+              <ul class="tablet--items__start">
+                <li class="burger__btn"><img
+                    src="img/burger.jpg" alt /></li>
+                <!-- seperate  bar-->
+                <li class="navBar--mobile__line"></li>
+                <li><img src="img/Group.jpg" alt /></li>
+              </ul>
+              <ul class="tablet--items__end">
+                <li><img src="img/call.png" alt /></li>
+                <li><img src="img/chat.png" alt /></li>
+                <li><img src="img/profile.png" alt /></li>
+                <!-- seperate  bar-->
+                <li class="navBar--mobile__line"></li>
+                <li><img src="img/repair.jpg"
+                    class="repair__btn--tablet" alt /></li>
+                <li><img src="img/checkstatus.png"
+                    alt class="order__btn" /></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!--aside for mobile -->
+        <aside class="aside__container">
+          <div class="sibebar">
+            <section id="image">
+              <div class="items">
+                <div class="image__item">
+                  <img src="img/cancel.png"
+                    class="close__btn" alt />
+                  <img src="img/Group.jpg" alt />
+                </div>
+                <div class="image__search">
+                  <img src="img/search.png" alt />
+                </div>
+              </div>
+            </section>
+            <section id="menu">
+              <div class="menu_title">
+                <div class="navibar">
+                  <div class="navibar__head">
+                    <div class="navibar__head--line"></div>
+                    <h3 class="navibar__head--txt">Equipment
+                      Repair</h3>
+                  </div>
+                  <ul class="navibar__menu">
+                    <li>Services</li>
+                    <li>For Corperate Clients</li>
+                    <li>For Equipment Sellers</li>
+                    <li>For Partners</li>
+                    <li>For Menufacturers</li>
+                    <li>Our Service Centers</li>
+                    <li>Contacts</li>
+                  </ul>
+                </div>
+                <div class="infor">
+                  <div class="infor__image">
+                    <img src="img/call.png"
+                      alt="call" />
+                    <img src="img/chat.png" alt />
+                    <img src="img/profile.png" alt />
+                  </div>
+                  <p>dul.ros07@gmail.com</p>
+                  <h1>010 7312 1770</h1>
+
+                  <!-- Language -->
+                  <div class="infor__lang">
+                    <button>KH</button>
+                    <button>ENG</button>
+                    <button>CH</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </aside>
+
+        <!-- Desktop -->
+        <section id="main-article">
+          <div class="mainHead">
+            <!-- text header -->
+            <div class="header">
+              <div class="header--bar"></div>
+              <h1 class="header--text">Service</h1>
+            </div>
+            <!-- image nav -->
+            <div class="navMenu">
+              <div class="navMenu__card">
+                <h2 class="navMenu__card--text">Submit a
+                  Request</h2>
+                <img src="img/repair.jpg"
+                  class="repair__btn" alt />
+              </div>
+              <div class="navMenu__card">
+                <h2 class="navMenu__card--text">Repair
+                  Status</h2>
+                <img src="img/checkstatus.png"
+                  class="order__btn" alt />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu">
+          <!-- tablete -->
+          <div class="menu__tablete">
+            <button>Repairable Devices</button>
+            <button>Additional Sevices</button>
+            <button>Service Prices</button>
+            <button>Specail Prices</button>
+          </div>
+          <!-- destop -->
+          <div class="menu__destop">
+            <button>Brands We Repair</button>
+            <button>Repairable Devices</button>
+            <button>Service Prices</button>
+            <button>Service Center Location</button>
+            <button>Specail Prices</button>
+            <button>Reviews</button>
+          </div>
+        </section>
+
+        <main class="articles articles-main">
+          <article class="articles__text">
+            <p>
+              We are an authorized service center for Dell
+              equipment repair.
+              Only with us can you repair your Dell laptop with
+              the official
+              manufacturer's warranty.
+            </p>
+            <p>
+              We have been operating successfully since 1992 and
+              have earned a
+              reputation as a reliable partner.<span class="text__wrap">
+                We take pride in the fact that people come to us
+                based on
+                recommendations and, in turn, recommend us to
+                their family and
+                friends.</span>
+            </p>
+            <button class="btnToggle" id="tongleBtn">
+              <div class="btnToggle__row" id="btnRow">
+                <span>&#8250;</span>
+                <span> &#8250;</span>
+              </div>
+              <span class="readMore">Read more</span>
+            </button>
+
+            <!-- <button class="articles__button">
+                      <img src="img/expand.png" alt />Read more
+                  </button> -->
+          </article>
+          <div class="articles__image">
+            <img src="img/Picture Copy.jpg" alt />
+          </div>
+
+          <!-- Card style lists -->
+          <section class="container__card-lists">
+            <section>
+              <!-- Title -->
+              <div class="titles-contain">
+                <div class="titles-contain__text">
+                  <h1>REPAIR OF EQUIPMENT FROM VARIOUS
+                    BRANDS</h1>
+                </div>
+              </div>
+              <!-- Swiper -->
+              <div class="contain">
+                <div class="swiper mySwiper">
+                  <!-- Add Card -->
+                  <div class="cards">
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/lenovo.png"
+                          alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/hp.png" alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/apple.png"
+                          alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/accer.png"
+                          alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/samsung.png"
+                          alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/bosch.png"
+                          alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/sony.png"
+                          alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/viewSonic.png"
+                          alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/lenovo.png"
+                          alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/hp.png" alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/apple.png"
+                          alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" id="productCard">
+                      <div class="card">
+                        <img src="img/accer.png"
+                          alt />
+                        <div class="card__circle">
+                          <span
+                            class="material-symbols-outlined deviceCard__arrow--color">
+                            arrow_forward_ios
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div
+                    class="swiper-pagination swiper-pagination-one pagination"></div>
+                </div>
+              </div>
+              <!-- toggle button -->
+              <button class="btnToggle" id="tongleBtn">
+                <div class="btnToggle__row" id="btnRow">
+                  <span>&#8250;</span>
+                  <span> &#8250;</span>
+                </div>
+                <span id="btnTxt">Show All</span>
+              </button>
+            </section>
+
+            <!-- Device repair -->
+            <section>
+              <!-- Title -->
+              <div class="titles-contain">
+                <div class="titles-contain__text">
+                  <h1>REPAIR OF EQUIPMENT FROM VARIOUS
+                    BRANDS</h1>
+                </div>
+              </div>
+
+              <!-- Swiper -->
+              <div class="swiper mySwiperTwo device-swiper">
+                <div class="swiper-wrapper device-swiper__card">
+                  <div class="swiper-slide">
+                    <!-- Card 1-->
+                    <figure class="deviceCard">
+                      <p class="deviceCard__text">Laptop
+                        Repair</p>
+                      <!-- Arrow -->
+                      <div class="deviceCard__btn">
+                        <span
+                          class="material-symbols-outlined deviceCard__arrow--color">
+                          arrow_forward_ios
+                        </span>
+                      </div>
+                    </figure>
+                  </div>
+                  <figure class="swiper-slide">
+                    <!-- Card 2-->
+                    <div class="deviceCard">
+                      <p class="deviceCard__text">Tablet
+                        Repair</p>
+                      <!-- Arrow -->
+                      <div class="deviceCard__btn">
+                        <span
+                          class="material-symbols-outlined deviceCard__arrow--color">
+                          arrow_forward_ios
+                        </span>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <!-- Card 3-->
+                    <div class="deviceCard">
+                      <p class="deviceCard__text">PC
+                        Repair</p>
+                      <!-- Arrow -->
+                      <div class="deviceCard__btn">
+                        <span
+                          class="material-symbols-outlined deviceCard__arrow--color">
+                          arrow_forward_ios
+                        </span>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <!-- Card 3-->
+                    <div class="deviceCard">
+                      <p class="deviceCard__text">Desktop
+                        Repair</p>
+                      <!-- Arrow -->
+                      <div class="deviceCard__btn">
+                        <span
+                          class="material-symbols-outlined deviceCard__arrow--color">
+                          arrow_forward_ios
+                        </span>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <!-- Card 4-->
+                    <div class="deviceCard">
+                      <p class="deviceCard__text">Phone
+                        Repair</p>
+                      <!-- Arrow -->
+                      <div class="deviceCard__btn">
+                        <span
+                          class="material-symbols-outlined deviceCard__arrow--color">
+                          arrow_forward_ios
+                        </span>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <!-- Card 5-->
+                    <div class="deviceCard">
+                      <p class="deviceCard__text">Printer
+                        Repair</p>
+                      <!-- Arrow -->
+                      <div class="deviceCard__btn">
+                        <span
+                          class="material-symbols-outlined deviceCard__arrow--color">
+                          arrow_forward_ios
+                        </span>
+                      </div>
+                    </div>
+                  </figure>
+                  <figure class="swiper-slide">
+                    <!-- Card 6-->
+                    <div class="deviceCard">
+                      <p class="deviceCard__text">Camera
+                        Repair</p>
+                      <!-- Arrow -->
+                      <div class="deviceCard__btn">
+                        <span
+                          class="material-symbols-outlined deviceCard__arrow--color">
+                          arrow_forward_ios
+                        </span>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <div
+                  class="swiper-pagination swiper-pagination-two"></div>
+              </div>
+            </section>
+            <!-- toggle button -->
+            <button class="btnToggle" id="tongleBtn">
+              <div class="btnToggle__row" id="btnRow">
+                <span>&#8250;</span>
+                <span> &#8250;</span>
+              </div>
+              <span id="btnTxt">Show All</span>
+            </button>
+
+            <section>
+              <!-- Title -->
+              <div class="titles-contain">
+                <div class="titles-contain__text">
+                  <h1>SERVICE PRICES</h1>
+                </div>
+              </div>
+              <!-- Service price of mobile -->
+              <div class="m-service-price">
+                <!-- Swiper -->
+                <div class="swiper mySwiperThree device-swiper">
+                  <div
+                    class="swiper-wrapper device-swiper__card">
+                    <figure class="swiper-slide">
+                      <!-- Card 1-->
+                      <div class="card-prices">
+                        <article
+                          class="card-prices__contain--txt">
+                          <h3>Repair Services</h3>
+                          <p>Testing with a technical
+                            report issuance</p>
+                          <h3>Price</h3>
+                          <p>Free</p>
+                          <h3>Time</h3>
+                          <p>30-120min</p>
+                        </article>
+                        <button
+                          class="card-prices__contain--btn">
+                          ORDER
+                          <span
+                            class="material-symbols-outlined card-prices__contain--btn--color">
+                            arrow_forward_ios
+                          </span>
+                        </button>
+                      </div>
+                    </figure>
+                    <figure class="swiper-slide">
+                      <!-- Card 2-->
+                      <div class="card-prices">
+                        <article
+                          class="card-prices__contain--txt">
+                          <h3>Repair Services</h3>
+                          <p>Diagnostics</p>
+                          <h3>Price</h3>
+                          <p>Free</p>
+                          <h3>Time</h3>
+                          <p>30min</p>
+                        </article>
+                        <button
+                          class="card-prices__contain--btn">
+                          ORDER
+                          <span
+                            class="material-symbols-outlined card-prices__contain--btn--color">
+                            arrow_forward_ios
+                          </span>
+                        </button>
+                      </div>
+                    </figure>
+                    <figure class="swiper-slide">
+                      <!-- Card 3-->
+                      <div class="card-prices">
+                        <article
+                          class="card-prices__contain--txt">
+                          <h3>Repair Services</h3>
+                          <p>Display Replacement</p>
+                          <h3>Price</h3>
+                          <p>1 000 ₽</p>
+                          <h3>Time</h3>
+                          <p>30-120min</p>
+                        </article>
+                        <button
+                          class="card-prices__contain--btn">
+                          ORDER
+                          <span
+                            class="material-symbols-outlined card-prices__contain--btn--color">
+                            arrow_forward_ios
+                          </span>
+                        </button>
+                      </div>
+                    </figure>
+                  </div>
+                  <div
+                    class="swiper-pagination swiper-pagination-three"></div>
+                </div>
+              </section>
+              <div class="d-service-price">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Repair Services</th>
+                      <th>Price</th>
+                      <th>Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Diagnostics</td>
+                      <td>Free</td>
+                      <td>30 min</td>
+                      <td>
+                        <button
+                          class="card-prices__contain--btn">
+                          ORDER
+                          <span
+                            class="material-symbols-outlined card-prices__contain--btn--color">
+                            arrow_forward_ios
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Display Replacement</td>
+                      <td>1 000 ₽</td>
+                      <td>30-120 min</td>
+                      <td>
+                        <button
+                          class="card-prices__contain--btn">
+                          ORDER
+                          <span
+                            class="material-symbols-outlined card-prices__contain--btn--color">
+                            arrow_forward_ios
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Polyphonic Speaker
+                        Replacement</td>
+                      <td>1 000 ₽</td>
+                      <td>30-120 min</td>
+                      <td>
+                        <button
+                          class="card-prices__contain--btn">
+                          ORDER
+                          <span
+                            class="material-symbols-outlined card-prices__contain--btn--color">
+                            arrow_forward_ios
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Testing with a technical report
+                        issuance</td>
+                      <td>1 000 ₽</td>
+                      <td>30-120 min</td>
+                      <td>
+                        <button
+                          class="card-prices__contain--btn">
+                          ORDER
+                          <span
+                            class="material-symbols-outlined card-prices__contain--btn--color">
+                            arrow_forward_ios
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Software Replacement</td>
+                      <td>1 000 ₽</td>
+                      <td>30-120 min</td>
+                      <td>
+                        <button
+                          class="card-prices__contain--btn">
+                          ORDER
+                          <span
+                            class="material-symbols-outlined card-prices__contain--btn--color">
+                            arrow_forward_ios
+                          </span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <article class="prices__article">
+                <p>All prices are inclusive of VAT. Repair cost
+                  is stated for a single service. For a
+                  commercial offer on ongoing maintenance,
+                  please submit a request.</p>
+                <h3>Get a Commercial Offer" or "Request a
+                  Commercial Proposal</h3>
+              </article>
+            </main>
+            <footer class="footer__contain">
+              <h3>© 2025 CPS Developed by the Ros Dul</h3>
+              <h3>Privacy Policy</h3>
+              <h3>The information posted on this page does not
+                constitute a public offer.</h3>
+            </footer>
+
+          </section>
+        </main>
+        <!-- SIDEBAR RIGHT SIDE -->
+        <aside class="sidebar-right">
+          <!-- summit -->
+          <section class="submit__container">
+            <img src="img/cancel.png" class="close__btn--right"
+              alt />
+            <div class="navibar__head">
+              <div class="navibar__head--line"></div>
+              <h1>Feedback</h1>
+            </div>
+            <form>
+              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Phone">
+              <input type="email" placeholder="Email">
+              <textarea name="Message"
+                placeholder="Message"></textarea>
+            </form>
+            <p>By clicking “submit”, you consent to the processing
+              of personal data and agree with our privacy
+              policy.</p>
+            <div class="card__send--btn">
+              <button
+                class="card-prices__contain--btn">
+                SEND
+                <span
+                  class="material-symbols-outlined card-prices__contain--btn--color">
+                  arrow_forward_ios
+                </span>
+              </button>
+            </div>
+
+          </section>
+          <!-- Order Call -->
+          <section class="order__container">
+            <img src="img/cancel.png" class="close__btn--right"
+              alt />
+            <div class="navibar__head">
+              <div class="navibar__head--line"></div>
+              <h1>Order call</h1>
+            </div>
+            <form>
+              <input type="text" placeholder="Phone">
+            </form>
+            <p>By clicking “submit”, you consent to the processing
+              of personal data and agree with our privacy
+              policy.</p>
+            <div class="card__send--btn">
+              <button
+                class="card-prices__contain--btn">
+                SEND
+                <span
+                  class="material-symbols-outlined card-prices__contain--btn--color">
+                  arrow_forward_ios
+                </span>
+              </button>
+            </div>
+
+          </section>
+        </aside>
+      </body>
+    </html>

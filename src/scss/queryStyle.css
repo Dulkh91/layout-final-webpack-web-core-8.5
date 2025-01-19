@@ -1,0 +1,300 @@
+/* Mobile image */
+/* media phone */
+@media only screen and (max-width: 767px) {
+  .tablet,
+  .navMenu,
+  .menu__destop,
+  .articles__text p:nth-of-type(2) {
+    display: none;
+  }
+  .articles__text,
+  .articles__image {
+    width: 100%;
+    float: none;
+  }
+  .articles__text p {
+    margin: 10px;
+  }
+  .articles__image img {
+    border-radius: unset;
+  }
+  .menu__tablete {
+    overflow: auto;
+    scrollbar-width: none; /* chrom */
+  }
+  .menu__tablete::-webkit-scrollbar {
+    display: none; /*Safari */
+  }
+  .menu__tablete button {
+    width: 15rem;
+    white-space: nowrap;
+    margin: 20px;
+  }
+  .articles__button {
+    margin-top: 40px;
+  }
+
+  /* Aside desktop */
+  .container__aside {
+    display: none;
+  }
+  .container {
+    display: block;
+  }
+
+  /* Aside for mobile */
+  .sibebar {
+    width: 100%;
+    position: fixed;
+    padding-right: 10px;
+    top: 0;
+    /* display: none; */
+    z-index: 30;
+    display: none;
+    overflow: hidden;
+  }
+
+  /* card style lists */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    /* text-align: center; */
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+  }
+  .card img {
+    display: block;
+    object-fit: cover;
+  }
+  .swiper-pagination {
+    position: static !important;
+    margin-top: 20px;
+  }
+
+  .btnToggle {
+    display: none;
+  }
+
+  /* Service price  style*/
+  .card-prices {
+    width: 260px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .card-prices__contain--txt {
+    margin: 20px 0 0 15px;
+  }
+  .card-prices__contain--txt h3 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    color: #7e7e82;
+  }
+  .card-prices__contain--txt p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    color: #1b1c21;
+  }
+  .card-prices__contain--btn {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: 119px;
+    height: 32px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 16px;
+    border: none;
+    color: #ffffff;
+    background-color: #ff3e79;
+    cursor: pointer;
+  }
+  .card-prices__contain--btn--color {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    right: 10px;
+  }
+  .d-service-price {
+    display: none;
+  }
+  .submit__container,
+  .order__container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .card__send--btn {
+    position: relative;
+    padding: 30px;
+    margin: 30px 0;
+  }
+
+  /* FOOTER SIDE */
+  .footer__contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: #7e7e82;
+  }
+  .footer__contain h3 {
+    margin-top: 20px;
+  }
+
+  .footer__contain h3 span {
+    display: block;
+  }
+}
+
+/* media tablete */
+@media only screen and (min-width: 768px) and (max-width: 1119px) {
+  /* phone and destop none show */
+  .mobile--items,
+  .navMenu,
+  .menu__destop,
+  .articles__text span {
+    display: none;
+  }
+
+  .sibebar {
+    position: fixed;
+    top: 0;
+    box-shadow: 8px 0 25px -2px gray;
+  }
+
+  /* Aside desktop */
+  .container__aside {
+    display: none;
+  }
+  .sibebar {
+    display: none;
+    z-index: 20;
+    animation: slides 0.4s;
+  }
+
+  @keyframes slides {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .menu_title {
+    height: 50em;
+  }
+
+  /* card style lists */
+  .titles__text {
+    margin: 15px 20px;
+  }
+  .cards,
+  .device-swiper__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 20px;
+    padding-bottom: 35px;
+    transition: all 0.3s ease-in-out;
+    width: 95%;
+  }
+
+  .card {
+    width: 224px;
+    height: 72px;
+  }
+  .container {
+    display: block;
+  }
+
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container__card-lists {
+    flex-grow: 1;
+    flex-basis: 200;
+  }
+
+  /* Device repair of swiper */
+  .device-swiper__card {
+    /* display: flex; */
+  }
+  .device-swiper__card > .swiper-slide {
+    flex-shrink: 1;
+  }
+  /* SERVICE Prices */
+  .m-service-price {
+    display: none;
+  }
+}
+
+/* media desktop */
+@media only screen and (min-width: 1120px) {
+  /* phone and tablet non show */
+  .mobile--items,
+  .tablet,
+  .menu__tablete {
+    display: none;
+  }
+
+  .sibebar {
+    display: none;
+  }
+  .menu_title {
+    height: 100em;
+  }
+
+  /* card style lists */
+  .cards,
+  .device-swiper__card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    width: 100%;
+    gap: 10px;
+    margin: 0 20px;
+    padding-bottom: 35px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container__card-lists {
+    flex-grow: 1;
+    flex-basis: 200;
+  }
+
+  /* Device repair of swiper */
+  .device-swiper {
+    margin: 25px 20px;
+    /* display: block; */
+  }
+
+  .device-swiper__card > .swiper-slide {
+    flex-shrink: 1;
+  }
+  /* SERVICE Prices */
+  .m-service-price {
+    display: none;
+  }
+}
