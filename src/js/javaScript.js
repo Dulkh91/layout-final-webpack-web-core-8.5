@@ -1,5 +1,8 @@
-import Swiper from 'swiper'
-import 'swiper/swiper-bundle.css'
+import Swiper from 'swiper/bundle'
+import 'swiper/css/bundle'
+
+import 'swiper/css'
+import 'swiper/css/pagination'
 
 let swiperInstance, swiperTwo, swiperThree
 

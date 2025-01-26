@@ -4,9 +4,14 @@
 // const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 import path from 'path'
+import { fileURLToPath } from 'url'
+
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 export default {
   // Entry file
@@ -15,7 +20,7 @@ export default {
   // Output file
   output: {
     filename: './js/bundle.js',
-    path: path.resolve(__dirname, 'dist') // Add output path,
+    path: path.resolve(__dirname, 'dist') // Add output path
   },
   resolve: {
     alias: {
@@ -47,7 +52,16 @@ export default {
           MiniCssExtractPlugin.loader, // Extract css to separate file
           'css-loader', // translates CSS into CommonJS
           'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
-          'sass-loader' // compiles Sass to CSS, using Node Sass by default
+          'sass-loader' // compiles Sass to CSS
+        ]
+      },
+
+      // Handle CSS files
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader, // Extract css to separate file
+          'css-loader' // translates CSS into CommonJS
         ]
       },
 
@@ -69,9 +83,6 @@ export default {
         }
       }
     ]
-  },
-  parserOptions: {
-    sourceType: 'module'
   },
   plugins: [
     // Include html file, styles and scripts will be automatically injected
