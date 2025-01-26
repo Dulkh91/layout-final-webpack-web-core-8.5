@@ -1,3 +1,6 @@
+import Swiper from 'swiper'
+import 'swiper/swiper-bundle.css'
+
 let swiperInstance, swiperTwo, swiperThree
 
 //Delare value of card-prices on screen

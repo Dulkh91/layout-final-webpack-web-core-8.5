@@ -1,18 +1,27 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+// const path = require('path')
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+// const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-module.exports = {
+import path from 'path'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
+
+export default {
   // Entry file
   entry: ['./src/js/index.js'],
 
   // Output file
   output: {
     filename: './js/bundle.js',
-    path: path.resolve(__dirname, 'dist') // Add output path
+    path: path.resolve(__dirname, 'dist') // Add output path,
   },
-
+  resolve: {
+    alias: {
+      __dirname: path.resolve(__dirname)
+    }
+  },
   // Source maps for easier debugging
   devtool: 'source-map',
 
@@ -60,6 +69,9 @@ module.exports = {
         }
       }
     ]
+  },
+  parserOptions: {
+    sourceType: 'module'
   },
   plugins: [
     // Include html file, styles and scripts will be automatically injected
