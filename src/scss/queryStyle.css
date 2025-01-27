@@ -11,6 +11,7 @@
   .articles__image {
     width: 100%;
     float: none;
+    margin: 0 5px auto;
   }
   .articles__text p {
     margin: 10px;
@@ -230,7 +231,8 @@
   }
   .container__card-lists {
     flex-grow: 1;
-    flex-basis: 200;
+    width: 100%;
+    max-width: 100%;
   }
 
   /* Device repair of swiper */
@@ -243,6 +245,10 @@
   /* SERVICE Prices */
   .m-service-price {
     display: none;
+  }
+  .swiper-wrapper {
+    display: grid !important;
+    width: 95% !important;
   }
 }
 
@@ -285,9 +291,9 @@
   }
 
   /* Device repair of swiper */
-  .device-swiper {
-    margin: 25px 20px;
-    /* display: block; */
+  .swiper-wrapper {
+    display: grid !important;
+    width: 95% !important;
   }
 
   .device-swiper__card > .swiper-slide {

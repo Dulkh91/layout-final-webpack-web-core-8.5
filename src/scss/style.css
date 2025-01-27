@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  align-items: center;
 }
 .navBar--mobile {
   width: 100%;
@@ -49,6 +50,7 @@ body {
   padding: 20px;
   gap: 1rem;
   margin: 0;
+  align-items: center;
 }
 .burger__btn,
 .close__btn,
@@ -152,6 +154,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 10px;
+  align-items: center;
 }
 .items img {
   margin: 8px;
